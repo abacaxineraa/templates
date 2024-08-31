@@ -1,0 +1,24 @@
+#+OPTIONS: toc:t
+#+LANGUAGE: en  
+#+EXCLUDE_TAGS: noexport
+#+STARTUP: latexpreview showeverything inlineimages
+
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage[AUTO]{inputenc}
+
+
+# #+LATEX_HEADER: \pagenumbering{gobble} % Disables page numbering
+
+#+LATEX_HEADER: \usepackage{graphicx}
+#+LATEX_HEADER: \usepackage{amsmath, amsthm, amssymb}
+#+LATEX_HEADER: \usepackage[table, xcdraw]{xcolor}
+#+LATEX_HEADER: \usepackage{cite}
+#+LATEX_HEADER: \usepackage{hyphenat}
+#+LATEX_HEADER: \usepackage{listings}
+
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage[margin=1 in]{geometry}
+#+LATEX_HEADER: \usepackage{lipsum}
+#+LATEX_HEADER: \usepackage[hidelinks]{hyperref}
+#+LATEX_HEADER: \usepackage{cleveref}
+#+LATEX_HEADER: \usepackage{color}

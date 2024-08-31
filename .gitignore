@@ -1,0 +1,10 @@
+*/.direnv
+*/.env
+*/.venv
+
+*/#*
+*/*#
+*/*~
+*/.bak
+
+*/ltximg/
