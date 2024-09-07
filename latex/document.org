@@ -22,3 +22,28 @@
 #+LATEX_HEADER: \usepackage[hidelinks]{hyperref}
 #+LATEX_HEADER: \usepackage{cleveref}
 #+LATEX_HEADER: \usepackage{color}
+
+* COMMENT
+;; #+LATEX_HEADER: \bibliographystyle{IEEEtran}
+citations:
+bibliography:
+  - author
+  - nocite
+  - note
+  - numeric
+  - text
+  - year
+  - author-year (default)
+  - plain
+  - numeric
+  - author-year (default)
+
+
+* COMMENT
+#+SETUPFILE: ~/proyectos/dawson/setup.org
+#+LATEX_CLASS: org-plain-latex
+#+LATEX_CLASS_OPTIONS: [letterpaper]
+
+#+TITLE: Title
+#+AUTHOR: Ana Torres
+#+DATE: \today
