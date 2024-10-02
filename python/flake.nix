@@ -8,7 +8,6 @@
       url = "github:nix-community/poetry2nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # pynoter.url = "github:maxrousseau/pynoter";
   };
 
   outputs = { self, nixpkgs, flake-utils, poetry2nix }:
@@ -22,8 +21,9 @@
         devShells = forEachSupportedSystem ({ pkgs }: {
           default = pkgs.mkShell {
             venvDir = ".venv";            
-            packages = with pkgs; [ python311 poetry ] ++
+            packages = with pkgs; [ python312 poetry ] ++
                                   (with pkgs.python311Packages; [
+                                    python-lsp-server
                                     pip
                                     venvShellHook
                                     numpy

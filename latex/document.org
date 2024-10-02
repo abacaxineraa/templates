@@ -23,10 +23,43 @@
 #+LATEX_HEADER: \usepackage{cleveref}
 #+LATEX_HEADER: \usepackage{color}
 
-* COMMENT
-;; #+LATEX_HEADER: \bibliographystyle{IEEEtran}
-citations:
-bibliography:
+* COMMENT Useful Information
+** text example
+hi [cite:@kim_kim]
+[cite/author:@kim_kim]
+
+#+CITE_EXPORT: biblatex ieee 
+
+** references example
+#+PRINT_BIBLIOGRAPHY:
+
+** parameters
+*** exporter:
+- basic
+- biblatex (preferred)
+
+*** citations, biblatex:
+https://www.overleaf.com/learn/latex/Biblatex_citation_styles#Citation_styles
+- numeric 
+- numeric-comp Compact [1, 2, 3] are replaced by [1-3].
+- numeric-verb Verbose  [2, 5, 7] will print [2];[5];[7].
+- alphabetic 
+- alphabetic-verb [Doe98, Doe95, Farn2004] will print [Doe98];[Doe95];[Farn2004].
+- authoryear 
+- authoryear-comp Doe 1992, 1995 instead of Doe 1992, Doe 1995.
+- authoryear-ibid intended for footnote citations. Replaces repeated citations by the abbreviation ibidem.
+- authoryear-icomp A style combining the features of authoryear-comp and authoryear-ibid
+- authortitle Implements the author-title scheme. Intended for citations given in footnotes.
+- authortitle-comp Instead of Doe, First title; Doe, Second title this will print Doe, First title, Second title.
+- authortitle-ibid 
+- authortitle-icomp.
+- authortitle-terse Variant of authoritle that only prints the title if the bibliography contains more than one work of the respective author/editor.
+- authortitle-tcomp 
+- authortitle-ticomp
+- verbose Citation style that prints a full citation when the entry is cited for the first time and a short version afterwards.
+- reading Citation style that goes with the bibliography style by the same name. Loads the authortitle style.
+
+*** bibliography, but also works for \ citation options:
   - author
   - nocite
   - note
@@ -37,7 +70,8 @@ bibliography:
   - plain
   - numeric
   - author-year (default)
-
+    
+*** TODO test things out
 
 * COMMENT
 #+SETUPFILE: ~/proyectos/dawson/setup.org
@@ -47,3 +81,5 @@ bibliography:
 #+TITLE: Title
 #+AUTHOR: Ana Torres
 #+DATE: \today
+
+#+BIBLIOGRAPHY: #.bib
